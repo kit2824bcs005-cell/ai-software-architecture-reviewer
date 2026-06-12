@@ -1,0 +1,33 @@
+.recommendation-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-left: 4px solid var(--accent-gold);
+  border-radius: var(--radius-sm);
+  background: rgba(17, 25, 40, 0.6);
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recommendation-card:hover {
+  transform: translateX(4px);
+  background: rgba(17, 25, 40, 0.8);
+}
+
+.rec-icon-wrapper {
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(250, 217, 97, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.rec-text {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}

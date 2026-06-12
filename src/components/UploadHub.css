@@ -1,0 +1,103 @@
+.upload-hub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 24px;
+}
+
+.upload-zone {
+  width: 100%;
+  max-width: 600px;
+  padding: 60px 40px;
+  text-align: center;
+  border: 2px dashed var(--border-glass);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  animation: fadeInUp 0.5s ease;
+}
+
+.upload-zone.dragging {
+  border-color: var(--accent-cyan);
+  background: rgba(0, 242, 254, 0.05);
+  animation: pulseGlow 1.5s infinite;
+}
+
+.upload-icon {
+  color: var(--accent-cyan);
+  margin-bottom: 16px;
+}
+
+.upload-zone h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.file-input-btn {
+  background: var(--accent-blue);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.file-input-btn:hover {
+  background: var(--accent-cyan);
+  box-shadow: 0 4px 12px rgba(0, 242, 254, 0.3);
+}
+
+.error-text {
+  color: #ef4444;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+/* Progress Steps */
+.progress-container {
+  width: 100%;
+  text-align: left;
+}
+
+.progress-container h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--accent-cyan);
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.step-item.active {
+  color: var(--text-primary);
+  opacity: 1;
+}
+
+.step-item.completed {
+  color: var(--accent-green);
+}
+
+.step-icon {
+  font-size: 1.2rem;
+}

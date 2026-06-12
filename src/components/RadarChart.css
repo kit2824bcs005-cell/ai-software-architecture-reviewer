@@ -1,0 +1,21 @@
+.radar-chart-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+}
+
+.radar-chart-container h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.chart-wrapper {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
